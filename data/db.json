@@ -106,12 +106,14 @@
         {
             "title": "個人作品網站",
             "content": "個人作品網站前端頁面製作，包含RWD響應式設計，使用Element+以及vue3 Composition API 實作功能開發，json-server模擬API資料，node.js實現前端圖片上傳功能",
-            "url": "https://",
+            "url": "https://vue3portfolio.netlify.app/",
             "tags": [
                 "Vue3",
                 "Element+",
                 "JSON-Server",
                 "Node.js",
+                "express",
+                "cors",
                 "Pinia",
                 "Vue Router",
                 "typescript",
