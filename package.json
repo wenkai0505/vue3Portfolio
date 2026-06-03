@@ -1,0 +1,45 @@
+{
+    "name": "portfolio",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev:vite": "vite",
+        "dev:server": "node server/index.js",
+        "dev": "run-p dev:vite dev:server",
+        "build": "npm run type-check && npm run build-only",
+        "preview": "vite preview",
+        "build-only": "vite build",
+        "type-check": "vue-tsc --build"
+    },
+    "dependencies": {
+        "@element-plus/icons-vue": "^2.3.2",
+        "axios": "^1.16.1",
+        "cors": "^2.8.6",
+        "element-plus": "^2.13.7",
+        "express": "^5.2.1",
+        "json-server": "^0.17.4",
+        "multer": "^2.1.1",
+        "sass": "^1.99.0",
+        "vue": "^3.5.32",
+        "vue-router": "^5.0.6"
+    },
+    "devDependencies": {
+        "@tsconfig/node24": "^24.0.4",
+        "@types/node": "^24.12.2",
+        "@vitejs/plugin-vue": "^6.0.6",
+        "@vue/tsconfig": "^0.9.1",
+        "chokidar-cli": "^3.0.0",
+        "npm-run-all2": "^8.0.4",
+        "typescript": "~6.0.0",
+        "unplugin-auto-import": "^21.0.0",
+        "unplugin-icons": "^23.0.1",
+        "unplugin-vue-components": "^32.0.0",
+        "vite": "^8.0.8",
+        "vite-plugin-vue-devtools": "^8.1.1",
+        "vue-tsc": "^3.2.6"
+    },
+    "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+    }
+}
