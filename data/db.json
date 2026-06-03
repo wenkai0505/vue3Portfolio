@@ -14,7 +14,8 @@
             "content": "《璞永建設 官方網站建置》 本專案為台灣精品建築品牌「璞永建設」量身打造官方網站。設計核心延續璞永建設「與自然共生、專注建築工藝」的品牌美學，將實體建築的沉穩線條與空間通透感，轉化為當代數位視覺語彙。",
             "url": "https://www.pycg.com.tw/index.php",
             "tags": ["Html", "Css", "JQuery", "前端網頁開發", "響應式網頁設計"],
-            "imageUrl": "http://localhost:3000/uploads/1780316441892-038fc3f3b3523.png",
+            "_imageUrl": "http://localhost:3000/uploads/1780316441892-038fc3f3b3523.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780316441892-038fc3f3b3523.png",
             "id": 10
         },
         {
@@ -22,7 +23,8 @@
             "content": "《瑞軒科技 官方網站建置》 本專案為全球知名顯示器與消費性電子大廠「瑞軒科技（Vizio）」進行官方網站的數位品牌升級。因應跨國企業形象與雙語系需求，以現代化的網頁設計全面重塑其全球門戶。",
             "url": "https://www.amtran.com.tw/index.php",
             "tags": ["Html", "Css", "Javascript"],
-            "imageUrl": "http://localhost:3000/uploads/1780374847874-b52fed1cf6182.png",
+            "＿imageUrl": "http://localhost:3000/uploads/1780374847874-b52fed1cf6182.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780374847874-b52fed1cf6182.png",
             "id": 12
         },
         {
