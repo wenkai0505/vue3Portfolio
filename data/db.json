@@ -5,7 +5,8 @@
             "content": "《FTG 松山奉天宮 官方網站建置》 本專案為北台灣指標性天公廟「松山奉天宮」進行官方網站數位轉型。設計上融合傳統宮殿建築的宏偉視覺與現代簡約線條，優化了廟方歷史介紹、祭祀神明導覽與線上服務流程。透過響應式網頁設計（RSD），將百年宮廟的莊嚴文化完美延伸至數位螢幕，打造兼具文化傳承與流暢體驗的現代化廟宇入口門戶。",
             "url": "https://www.ftg.org.tw/",
             "tags": ["Html", "Css", "JQuery", "前端網頁開發", "響應式網頁設計"],
-            "imageUrl": "http://localhost:3000/uploads/1780289087021-38db3f50d7be1.png",
+            "_imageUrl": "http://localhost:3000/uploads/1780289087021-38db3f50d7be1.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780289087021-38db3f50d7be1.png",
             "id": 9
         },
         {
