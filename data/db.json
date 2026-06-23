@@ -124,7 +124,7 @@
             "id": 17
         },
         {
-            "title": "旅刻 LumaTrip｜旅遊行程規劃 PWA",
+            "title": "旅遊行程規劃 PWA",
             "content": "旅遊行程規劃行動端 Web App，採手機優先 RWD 設計，支援加入 iPhone 主畫面作為 PWA 使用。以 Vue 3 Composition API 與 Composables 拆分行程規劃、景點推薦、親子公園探索等模組，搭配 Vant 元件庫與 TypeScript 實作型別安全的前端架構。\n\n整合 ChicTrip 熱門景點 API 與全台縣市親子公園／共融遊戲場官方資料匯入，提供景點搜尋、區域篩選、多天行程編排、景點加入行程與本地儲存等功能。",
             "url": "https://vue3travelapp.netlify.app/",
             "tags": [
