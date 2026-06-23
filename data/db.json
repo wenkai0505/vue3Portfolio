@@ -1,170 +1,154 @@
 {
-  "works": [
-    {
-      "title": "FTG 松山奉天宮",
-      "content": "《FTG 松山奉天宮 官方網站建置》 本專案為北台灣指標性天公廟「松山奉天宮」進行官方網站數位轉型。設計上融合傳統宮殿建築的宏偉視覺與現代簡約線條，優化了廟方歷史介紹、祭祀神明導覽與線上服務流程。透過響應式網頁設計（RSD），將百年宮廟的莊嚴文化完美延伸至數位螢幕，打造兼具文化傳承與流暢體驗的現代化廟宇入口門戶。",
-      "url": "https://www.ftg.org.tw/",
-      "tags": [
-        "Html",
-        "Css",
-        "JQuery",
-        "前端網頁開發",
-        "響應式網頁設計"
-      ],
-      "_imageUrl": "http://localhost:3000/uploads/1780289087021-38db3f50d7be1.png",
-      "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780289087021-38db3f50d7be1.png",
-      "id": 9
-    },
-    {
-      "title": "璞永建設",
-      "content": "《璞永建設 官方網站建置》 本專案為台灣精品建築品牌「璞永建設」量身打造官方網站。設計核心延續璞永建設「與自然共生、專注建築工藝」的品牌美學，將實體建築的沉穩線條與空間通透感，轉化為當代數位視覺語彙。",
-      "url": "https://www.pycg.com.tw/index.php",
-      "tags": [
-        "Html",
-        "Css",
-        "JQuery",
-        "前端網頁開發",
-        "響應式網頁設計"
-      ],
-      "_imageUrl": "http://localhost:3000/uploads/1780316441892-038fc3f3b3523.png",
-      "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780316441892-038fc3f3b3523.png",
-      "id": 10
-    },
-    {
-      "title": "瑞軒科技",
-      "content": "《瑞軒科技 官方網站建置》 本專案為全球知名顯示器與消費性電子大廠「瑞軒科技（Vizio）」進行官方網站的數位品牌升級。因應跨國企業形象與雙語系需求，以現代化的網頁設計全面重塑其全球門戶。",
-      "url": "https://www.amtran.com.tw/index.php",
-      "tags": [
-        "Html",
-        "Css",
-        "Javascript"
-      ],
-      "_imageUrl": "http://localhost:3000/uploads/1780374847874-b52fed1cf6182.png",
-      "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780374847874-b52fed1cf6182.png",
-      "id": 12
-    },
-    {
-      "title": "Pexels 影像探索平台",
-      "content": "專案展示了前端非同步資料處理與 API 整合 的實務應用能力，將豐富的第三方影像資源轉化為高度流暢、直覺的網頁應用程式。",
-      "url": "https://photos-react.netlify.app/",
-      "tags": [
-        "JavaScript",
-        "RESTful API ",
-        "React",
-        "非同步資料處理",
-        "效能優化"
-      ],
-      "_imageUrl": "http://localhost:3000/uploads/1780376402810-6d9b89b677f84.png",
-      "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780376402810-6d9b89b677f84.png",
-      "id": 13
-    },
-    {
-      "title": "遊戲平台前端",
-      "content": "負責前端網頁製作，包含RWD響應式設計，使用vue3 Composition API 實作功能開發，模組拆分與 API 串接",
-      "url": "https://github.com/wenkai0505/vue3DCproject",
-      "tags": [
-        "Sass",
-        "Flexbox",
-        "CSS Grid",
-        "Pinia",
-        "Vue Router",
-        "JavaScript",
-        "Axios",
-        "RESTful API 串接",
-        "Vue3"
-      ],
-      "_imageUrl": "http://localhost:3000/uploads/1780378826562-52ed3314b277f.png",
-      "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780378826562-52ed3314b277f.png",
-      "id": 14
-    },
-    {
-      "title": "多版型遊戲平台",
-      "content": "多版型切換前端網頁製作，包含RWD響應式設計，i18n多語系，使用vue3 Composition API 實作功能開發，模組拆分與 API 串接",
-      "url": "https://github.com/wenkai0505/vue3GSIPlatform",
-      "tags": [
-        "Vue3",
-        "i18n",
-        "Sass",
-        "Flexbox",
-        "CSS Grid",
-        "Quasar",
-        "Pinia",
-        "Vue Router",
-        "JavaScript",
-        "Axios",
-        "RESTful API 串接"
-      ],
-      "_imageUrl": "http://localhost:3000/uploads/1780379914333-c0aa47ffb9c5e.png",
-      "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780379914333-c0aa47ffb9c5e.png",
-      "id": 15
-    },
-    {
-      "title": "後台管理系統",
-      "content": "後台管理系統協作開發，前端網頁製作，包含RWD響應式設計，i18n多語系，使用vue3 Composition API 實作功能開發，模組拆分與 API 串接",
-      "url": "https://github.com/wenkai0505/vue3GSIDashboard",
-      "tags": [
-        "Vue3",
-        "i18n",
-        "Sass",
-        "Flexbox",
-        "CSS Grid",
-        "Quasar",
-        "Pinia",
-        "Vue Router",
-        "JavaScript",
-        "Axios",
-        "RESTful API 串接"
-      ],
-      "_imageUrl": "http://localhost:3000/uploads/1780386150216-80fad2257bdfb.png",
-      "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780386150216-80fad2257bdfb.png",
-      "id": 16
-    },
-    {
-      "title": "個人作品網站",
-      "content": "個人作品網站前端頁面製作，包含RWD響應式設計，使用Element+以及vue3 Composition API 實作功能開發，json-server模擬API資料，node.js實現前端圖片上傳功能",
-      "url": "https://vue3portfolio.netlify.app/",
-      "tags": [
-        "Vue3",
-        "Element+",
-        "JSON-Server",
-        "Node.js",
-        "express",
-        "cors",
-        "Pinia",
-        "Vue Router",
-        "typescript",
-        "sass"
-      ],
-      "_imageUrl": "http://localhost:3000/uploads/1780387141489-48341610c9478.png",
-      "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780387141489-48341610c9478.png",
-      "id": 17
-    },
-    {
-      "title": "旅刻 LumaTrip｜旅遊行程規劃 PWA",
-      "content": "旅遊行程規劃行動端 Web App，採手機優先 RWD 設計，支援加入 iPhone 主畫面作為 PWA 使用。以 Vue 3 Composition API 與 Composables 拆分行程規劃、景點推薦、親子公園探索等模組，搭配 Vant 元件庫與 TypeScript 實作型別安全的前端架構。\n\n整合 ChicTrip 熱門景點 API 與全台縣市親子公園／共融遊戲場官方資料匯入，提供景點搜尋、區域篩選、多天行程編排、景點加入行程與本地儲存等功能。",
-      "url": "https://vue3travelapp.netlify.app/",
-      "tags": [
-        "Vue3",
-        "TypeScript",
-        "Vite",
-        "Vant",
-        "Composition API",
-        "PWA",
-        "Sass",
-        "Axios",
-        "Express",
-        "Node.js"
-      ],
-      "imageUrl": "http://localhost:3000/uploads/1782182171457-bde610a38db27.png",
-      "id": 18
-    }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "name": "Ryan",
-      "email": "ryan@gmail.com",
-      "password": "123456"
-    }
-  ]
+    "works": [
+        {
+            "title": "FTG 松山奉天宮",
+            "content": "《FTG 松山奉天宮 官方網站建置》 本專案為北台灣指標性天公廟「松山奉天宮」進行官方網站數位轉型。設計上融合傳統宮殿建築的宏偉視覺與現代簡約線條，優化了廟方歷史介紹、祭祀神明導覽與線上服務流程。透過響應式網頁設計（RSD），將百年宮廟的莊嚴文化完美延伸至數位螢幕，打造兼具文化傳承與流暢體驗的現代化廟宇入口門戶。",
+            "url": "https://www.ftg.org.tw/",
+            "tags": ["Html", "Css", "JQuery", "前端網頁開發", "響應式網頁設計"],
+            "_imageUrl": "http://localhost:3000/uploads/1780289087021-38db3f50d7be1.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780289087021-38db3f50d7be1.png",
+            "id": 9
+        },
+        {
+            "title": "璞永建設",
+            "content": "《璞永建設 官方網站建置》 本專案為台灣精品建築品牌「璞永建設」量身打造官方網站。設計核心延續璞永建設「與自然共生、專注建築工藝」的品牌美學，將實體建築的沉穩線條與空間通透感，轉化為當代數位視覺語彙。",
+            "url": "https://www.pycg.com.tw/index.php",
+            "tags": ["Html", "Css", "JQuery", "前端網頁開發", "響應式網頁設計"],
+            "_imageUrl": "http://localhost:3000/uploads/1780316441892-038fc3f3b3523.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780316441892-038fc3f3b3523.png",
+            "id": 10
+        },
+        {
+            "title": "瑞軒科技",
+            "content": "《瑞軒科技 官方網站建置》 本專案為全球知名顯示器與消費性電子大廠「瑞軒科技（Vizio）」進行官方網站的數位品牌升級。因應跨國企業形象與雙語系需求，以現代化的網頁設計全面重塑其全球門戶。",
+            "url": "https://www.amtran.com.tw/index.php",
+            "tags": ["Html", "Css", "Javascript"],
+            "_imageUrl": "http://localhost:3000/uploads/1780374847874-b52fed1cf6182.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780374847874-b52fed1cf6182.png",
+            "id": 12
+        },
+        {
+            "title": "Pexels 影像探索平台",
+            "content": "專案展示了前端非同步資料處理與 API 整合 的實務應用能力，將豐富的第三方影像資源轉化為高度流暢、直覺的網頁應用程式。",
+            "url": "https://photos-react.netlify.app/",
+            "tags": [
+                "JavaScript",
+                "RESTful API ",
+                "React",
+                "非同步資料處理",
+                "效能優化"
+            ],
+            "_imageUrl": "http://localhost:3000/uploads/1780376402810-6d9b89b677f84.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780376402810-6d9b89b677f84.png",
+            "id": 13
+        },
+        {
+            "title": "遊戲平台前端",
+            "content": "負責前端網頁製作，包含RWD響應式設計，使用vue3 Composition API 實作功能開發，模組拆分與 API 串接",
+            "url": "https://github.com/wenkai0505/vue3DCproject",
+            "tags": [
+                "Sass",
+                "Flexbox",
+                "CSS Grid",
+                "Pinia",
+                "Vue Router",
+                "JavaScript",
+                "Axios",
+                "RESTful API 串接",
+                "Vue3"
+            ],
+            "_imageUrl": "http://localhost:3000/uploads/1780378826562-52ed3314b277f.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780378826562-52ed3314b277f.png",
+            "id": 14
+        },
+        {
+            "title": "多版型遊戲平台",
+            "content": "多版型切換前端網頁製作，包含RWD響應式設計，i18n多語系，使用vue3 Composition API 實作功能開發，模組拆分與 API 串接",
+            "url": "https://github.com/wenkai0505/vue3GSIPlatform",
+            "tags": [
+                "Vue3",
+                "i18n",
+                "Sass",
+                "Flexbox",
+                "CSS Grid",
+                "Quasar",
+                "Pinia",
+                "Vue Router",
+                "JavaScript",
+                "Axios",
+                "RESTful API 串接"
+            ],
+            "_imageUrl": "http://localhost:3000/uploads/1780379914333-c0aa47ffb9c5e.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780379914333-c0aa47ffb9c5e.png",
+            "id": 15
+        },
+        {
+            "title": "後台管理系統",
+            "content": "後台管理系統協作開發，前端網頁製作，包含RWD響應式設計，i18n多語系，使用vue3 Composition API 實作功能開發，模組拆分與 API 串接",
+            "url": "https://github.com/wenkai0505/vue3GSIDashboard",
+            "tags": [
+                "Vue3",
+                "i18n",
+                "Sass",
+                "Flexbox",
+                "CSS Grid",
+                "Quasar",
+                "Pinia",
+                "Vue Router",
+                "JavaScript",
+                "Axios",
+                "RESTful API 串接"
+            ],
+            "_imageUrl": "http://localhost:3000/uploads/1780386150216-80fad2257bdfb.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780386150216-80fad2257bdfb.png",
+            "id": 16
+        },
+        {
+            "title": "個人作品網站",
+            "content": "個人作品網站前端頁面製作，包含RWD響應式設計，使用Element+以及vue3 Composition API 實作功能開發，json-server模擬API資料，node.js實現前端圖片上傳功能",
+            "url": "https://vue3portfolio.netlify.app/",
+            "tags": [
+                "Vue3",
+                "Element+",
+                "JSON-Server",
+                "Node.js",
+                "express",
+                "cors",
+                "Pinia",
+                "Vue Router",
+                "typescript",
+                "sass"
+            ],
+            "_imageUrl": "http://localhost:3000/uploads/1780387141489-48341610c9478.png",
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1780387141489-48341610c9478.png",
+            "id": 17
+        },
+        {
+            "title": "旅刻 LumaTrip｜旅遊行程規劃 PWA",
+            "content": "旅遊行程規劃行動端 Web App，採手機優先 RWD 設計，支援加入 iPhone 主畫面作為 PWA 使用。以 Vue 3 Composition API 與 Composables 拆分行程規劃、景點推薦、親子公園探索等模組，搭配 Vant 元件庫與 TypeScript 實作型別安全的前端架構。\n\n整合 ChicTrip 熱門景點 API 與全台縣市親子公園／共融遊戲場官方資料匯入，提供景點搜尋、區域篩選、多天行程編排、景點加入行程與本地儲存等功能。",
+            "url": "https://vue3travelapp.netlify.app/",
+            "tags": [
+                "Vue3",
+                "TypeScript",
+                "Vite",
+                "Vant",
+                "Composition API",
+                "PWA",
+                "Sass",
+                "Axios",
+                "Express",
+                "Node.js"
+            ],
+            "imageUrl": "https://vue3portfolio.onrender.com/uploads/1782182171457-bde610a38db27.png",
+            "id": 18
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "Ryan",
+            "email": "ryan@gmail.com",
+            "password": "123456"
+        }
+    ]
 }
