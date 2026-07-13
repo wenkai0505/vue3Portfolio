@@ -236,8 +236,10 @@ const strengths = [
 <style scoped lang="scss">
 .about {
     padding-bottom: 90px;
-    // background: linear-gradient(180deg, #f7f3eb 0%, #edf1f4 100%);
     color: #1d2329;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
 
     --surface: rgba(255, 255, 255, 0.9);
     --surface-strong: #ffffff;
@@ -253,11 +255,18 @@ const strengths = [
     --shadow: 0 18px 42px rgba(29, 35, 41, 0.08);
 
     .hero {
-        margin-top: 28px;
+        margin-top: 18px;
         display: grid;
-        grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.85fr);
-        gap: 24px;
+        grid-template-columns: 1fr;
+        gap: 16px;
         align-items: stretch;
+        width: 100%;
+    }
+
+    .hero__copy,
+    .hero__panel {
+        min-width: 0;
+        max-width: 100%;
     }
 
     .hero__copy,
@@ -275,29 +284,32 @@ const strengths = [
     }
 
     .hero__copy {
-        border-radius: 34px;
-        padding: 44px;
+        border-radius: 20px;
+        padding: 24px 18px;
 
         .eyebrow {
             color: var(--accent);
-            letter-spacing: 0.18em;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: 11px;
             margin-bottom: 14px;
             font-weight: 700;
+            line-height: 1.6;
+            overflow-wrap: anywhere;
         }
 
         h2 {
-            font-size: clamp(34px, 4.6vw, 58px);
-            line-height: 1.12;
+            font-size: clamp(26px, 7vw, 34px);
+            line-height: 1.25;
             color: var(--text);
             font-weight: 900;
             margin-bottom: 18px;
+            overflow-wrap: anywhere;
         }
 
         .summary {
-            font-size: 16px;
-            line-height: 1.95;
+            font-size: 15px;
+            line-height: 1.8;
             color: var(--muted);
         }
 
@@ -305,8 +317,8 @@ const strengths = [
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin-top: 24px;
-            margin-bottom: 28px;
+            margin-top: 18px;
+            margin-bottom: 20px;
 
             .chip {
                 display: inline-flex;
@@ -332,7 +344,8 @@ const strengths = [
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                min-width: 142px;
+                width: 100%;
+                min-width: 0;
                 height: 48px;
                 padding: 0 20px;
                 border-radius: 999px;
@@ -370,8 +383,8 @@ const strengths = [
     }
 
     .hero__panel {
-        border-radius: 34px;
-        padding: 28px;
+        border-radius: 20px;
+        padding: 16px;
         display: flex;
         flex-direction: column;
         gap: 18px;
@@ -379,8 +392,8 @@ const strengths = [
         border: 1px solid rgba(255, 255, 255, 0.08);
 
         .portrait {
-            min-height: 320px;
-            border-radius: 28px;
+            min-height: 220px;
+            border-radius: 22px;
             background:
                 radial-gradient(
                     circle at top,
@@ -397,7 +410,7 @@ const strengths = [
             &__inner {
                 width: 100%;
                 height: 100%;
-                border-radius: 20px;
+                border-radius: 18px;
                 border: 1px solid rgba(255, 255, 255, 0.14);
                 background: rgba(255, 255, 255, 0.06);
                 display: flex;
@@ -411,7 +424,7 @@ const strengths = [
 
             &__small {
                 font-size: 13px;
-                letter-spacing: 0.16em;
+                letter-spacing: 0.12em;
                 opacity: 0.86;
 
                 &--bottom {
@@ -434,9 +447,9 @@ const strengths = [
 
             .profileItem {
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 18px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
                 padding: 14px 16px;
                 border-radius: 18px;
                 background: rgba(255, 255, 255, 0.05);
@@ -444,23 +457,24 @@ const strengths = [
 
                 &__label {
                     color: rgba(255, 255, 255, 0.56);
-                    min-width: 56px;
-                    font-size: 14px;
+                    font-size: 13px;
                 }
 
                 &__value {
                     color: #fff;
                     font-weight: 700;
-                    text-align: right;
+                    text-align: left;
+                    line-height: 1.5;
+                    overflow-wrap: anywhere;
                 }
             }
         }
     }
 
     .bioSection {
-        margin-top: 42px;
-        padding: 36px 32px 32px;
-        border-radius: 34px;
+        margin-top: 28px;
+        padding: 20px 16px;
+        border-radius: 20px;
         border: 1px solid var(--border);
         background: linear-gradient(
             180deg,
@@ -471,8 +485,8 @@ const strengths = [
 
         .bioHeader {
             max-width: 720px;
-            margin-bottom: 28px;
-            padding-left: 18px;
+            margin-bottom: 18px;
+            padding-left: 14px;
             border-left: 4px solid var(--accent);
 
             &__label {
@@ -486,7 +500,7 @@ const strengths = [
 
             &__title {
                 color: var(--text);
-                font-size: clamp(24px, 3vw, 34px);
+                font-size: clamp(20px, 5.5vw, 26px);
                 line-height: 1.35;
                 font-weight: 900;
             }
@@ -494,18 +508,19 @@ const strengths = [
 
         .bioBody {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 18px;
+            grid-template-columns: 1fr;
+            gap: 14px;
         }
 
         .bioChapter {
             display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 16px;
-            padding: 24px;
-            border-radius: 24px;
+            grid-template-columns: auto minmax(0, 1fr);
+            gap: 12px;
+            padding: 18px;
+            border-radius: 20px;
             border: 1px solid var(--border);
             background: rgba(255, 255, 255, 0.72);
+            min-width: 0;
 
             &__step {
                 color: var(--accent-deep);
@@ -517,31 +532,33 @@ const strengths = [
             }
 
             &__content {
+                min-width: 0;
+
                 h4 {
                     margin-bottom: 10px;
                     color: var(--text);
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 800;
                     line-height: 1.35;
                 }
 
                 p {
                     color: var(--muted);
-                    font-size: 15px;
-                    line-height: 1.9;
+                    font-size: 14px;
+                    line-height: 1.8;
                 }
             }
         }
 
         .bioHighlights {
-            margin-top: 18px;
+            margin-top: 14px;
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 14px;
+            grid-template-columns: 1fr;
+            gap: 12px;
         }
 
         .bioHighlight {
-            padding: 20px 18px;
+            padding: 18px 16px;
             border-radius: 20px;
             border: 1px solid rgba(201, 179, 103, 0.22);
             background: rgba(201, 179, 103, 0.08);
@@ -557,18 +574,18 @@ const strengths = [
 
             &__value {
                 color: var(--text);
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 800;
                 line-height: 1.5;
             }
         }
 
         .bioClosing {
-            margin-top: 22px;
-            padding-top: 20px;
+            margin-top: 18px;
+            padding-top: 18px;
             border-top: 1px solid var(--border);
             color: var(--text);
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 700;
             line-height: 1.8;
             max-width: 680px;
@@ -576,16 +593,17 @@ const strengths = [
     }
 
     .stats {
-        margin-top: 24px;
+        margin-top: 20px;
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 16px;
+        grid-template-columns: 1fr;
+        gap: 12px;
 
         .statCard {
-            border-radius: 22px;
-            padding: 24px 20px;
+            border-radius: 20px;
+            padding: 20px 16px;
             position: relative;
             overflow: hidden;
+            min-width: 0;
 
             &::before {
                 content: "";
@@ -601,7 +619,7 @@ const strengths = [
             }
 
             &__value {
-                font-size: 28px;
+                font-size: 22px;
                 font-weight: 900;
                 color: var(--text);
                 margin-bottom: 10px;
@@ -615,11 +633,11 @@ const strengths = [
     }
 
     .sectionBlock {
-        margin-top: 44px;
+        margin-top: 28px;
 
         .sectionHeading {
             margin-bottom: 18px;
-            padding-left: 18px;
+            padding-left: 14px;
             border-left: 4px solid var(--accent);
 
             .sectionHeading__subtitle {
@@ -632,8 +650,8 @@ const strengths = [
             }
 
             h3 {
-                font-size: clamp(24px, 3vw, 36px);
-                line-height: 1.24;
+                font-size: clamp(20px, 5.5vw, 26px);
+                line-height: 1.3;
                 color: var(--text);
                 font-weight: 900;
             }
@@ -641,12 +659,12 @@ const strengths = [
 
         .skillGrid {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 18px;
+            grid-template-columns: 1fr;
+            gap: 14px;
 
             .skillCard {
-                border-radius: 24px;
-                padding: 26px;
+                border-radius: 20px;
+                padding: 20px 18px;
                 background: linear-gradient(
                     180deg,
                     var(--surface-strong),
@@ -654,6 +672,7 @@ const strengths = [
                 );
                 border: 1px solid var(--border);
                 box-shadow: var(--shadow);
+                min-width: 0;
 
                 &__index {
                     font-size: 13px;
@@ -664,7 +683,7 @@ const strengths = [
                 }
 
                 h4 {
-                    font-size: 20px;
+                    font-size: 18px;
                     margin-bottom: 10px;
                     font-weight: 800;
                     color: var(--text);
@@ -679,13 +698,14 @@ const strengths = [
 
         &.quoteGrid {
             display: grid;
-            grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-            gap: 18px;
+            grid-template-columns: 1fr;
+            gap: 14px;
 
             .quoteCard,
             .highlightCard {
-                border-radius: 26px;
-                padding: 28px;
+                border-radius: 20px;
+                padding: 20px 18px;
+                min-width: 0;
             }
 
             .quoteCard {
@@ -698,7 +718,7 @@ const strengths = [
                 box-shadow: var(--shadow);
 
                 h3 {
-                    font-size: clamp(22px, 2.8vw, 32px);
+                    font-size: clamp(20px, 5vw, 28px);
                     line-height: 1.35;
                     margin-bottom: 14px;
                     font-weight: 900;
@@ -740,16 +760,16 @@ const strengths = [
     }
 
     .quoteBlock {
-        margin-top: 44px;
-        border-radius: 34px;
-        padding: 34px 28px;
+        margin-top: 28px;
+        border-radius: 20px;
+        padding: 24px 18px;
         text-align: center;
         background: linear-gradient(135deg, var(--panel), var(--panel-deep));
         border: 1px solid rgba(255, 255, 255, 0.08);
         box-shadow: var(--shadow);
 
         &__text {
-            font-size: clamp(20px, 2.6vw, 28px);
+            font-size: clamp(18px, 5vw, 22px);
             font-weight: 900;
             line-height: 1.55;
             color: #fff;
@@ -757,21 +777,14 @@ const strengths = [
     }
 
     @include pad {
-        .hero,
-        .bioSection .bioBody,
-        .bioSection .bioHighlights,
-        .sectionBlock.quoteGrid {
-            grid-template-columns: 1fr;
+        .hero {
+            margin-top: 24px;
+            gap: 20px;
         }
 
-        .stats {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-    }
-
-    @include mobile {
         .hero__copy,
         .hero__panel,
+        .bioSection,
         .bioChapter,
         .bioHighlight,
         .statCard,
@@ -779,51 +792,335 @@ const strengths = [
         .quoteCard,
         .highlightCard,
         .quoteBlock {
-            border-radius: 20px;
+            border-radius: 26px;
         }
 
         .hero__copy {
-            padding: 28px 22px;
+            padding: 32px 28px;
+
+            .eyebrow {
+                font-size: 12px;
+                letter-spacing: 0.14em;
+            }
+
+            h2 {
+                font-size: clamp(28px, 4vw, 42px);
+                line-height: 1.2;
+            }
+
+            .summary {
+                font-size: 16px;
+                line-height: 1.9;
+            }
+
+            .hero__actions {
+                .primaryBtn,
+                .secondaryBtn {
+                    width: auto;
+                    min-width: 142px;
+                }
+            }
         }
 
         .hero__panel {
-            padding: 18px;
+            padding: 22px;
+
+            .portrait {
+                min-height: 280px;
+            }
+
+            .profileItem {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 16px;
+
+                &__label {
+                    min-width: 56px;
+                    flex-shrink: 0;
+                }
+
+                &__value {
+                    text-align: right;
+                }
+            }
         }
 
         .bioSection {
-            padding: 22px;
-
-            .bioChapter {
-                padding: 20px;
-            }
+            margin-top: 36px;
+            padding: 28px 24px;
 
             .bioHeader {
-                margin-bottom: 22px;
+                margin-bottom: 24px;
+                padding-left: 18px;
+
+                &__title {
+                    font-size: clamp(24px, 3vw, 30px);
+                }
+            }
+
+            .bioChapter {
+                padding: 22px;
+
+                &__content h4 {
+                    font-size: 20px;
+                }
+
+                &__content p {
+                    font-size: 15px;
+                    line-height: 1.9;
+                }
+            }
+
+            .bioHighlights {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
             }
 
             .bioClosing {
-                font-size: 15px;
+                font-size: 16px;
             }
         }
 
-        .hero__panel .portrait {
-            min-height: 250px;
-        }
+        .stats {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
 
-        .stats,
-        .bioSection .bioBody,
-        .bioSection .bioHighlights,
-        .sectionBlock .skillGrid,
-        .sectionBlock.quoteGrid {
-            grid-template-columns: 1fr;
-        }
+            .statCard {
+                padding: 22px 18px;
 
-        .stats .statCard__value {
-            font-size: 24px;
+                &__value {
+                    font-size: 26px;
+                }
+            }
         }
 
         .sectionBlock {
-            margin-top: 34px;
+            margin-top: 36px;
+
+            .sectionHeading {
+                padding-left: 18px;
+
+                h3 {
+                    font-size: clamp(24px, 3vw, 32px);
+                }
+            }
+
+            .skillGrid .skillCard,
+            &.quoteGrid .quoteCard,
+            &.quoteGrid .highlightCard {
+                padding: 24px;
+                border-radius: 24px;
+            }
+        }
+
+        .quoteBlock {
+            margin-top: 36px;
+            padding: 30px 24px;
+            border-radius: 28px;
+
+            &__text {
+                font-size: clamp(20px, 2.8vw, 26px);
+            }
+        }
+    }
+
+    @include desktop {
+        .hero {
+            margin-top: 28px;
+            grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr);
+            gap: 24px;
+        }
+
+        .hero__copy,
+        .hero__panel,
+        .bioSection,
+        .bioChapter,
+        .bioHighlight,
+        .statCard,
+        .skillCard,
+        .quoteCard,
+        .highlightCard,
+        .quoteBlock {
+            border-radius: 34px;
+        }
+
+        .hero__copy {
+            padding: 44px;
+
+            .eyebrow {
+                font-size: 12px;
+                letter-spacing: 0.18em;
+            }
+
+            h2 {
+                font-size: clamp(34px, 4.6vw, 58px);
+                line-height: 1.12;
+            }
+
+            .summary {
+                font-size: 16px;
+                line-height: 1.95;
+            }
+
+            .hero__chips {
+                margin-top: 24px;
+                margin-bottom: 28px;
+            }
+
+            .hero__actions {
+                .primaryBtn,
+                .secondaryBtn {
+                    width: auto;
+                    min-width: 142px;
+                }
+            }
+        }
+
+        .hero__panel {
+            padding: 28px;
+
+            .portrait {
+                min-height: 320px;
+                border-radius: 28px;
+            }
+
+            .profileItem {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 18px;
+
+                &__label {
+                    min-width: 56px;
+                    flex-shrink: 0;
+                    font-size: 14px;
+                }
+
+                &__value {
+                    text-align: right;
+                }
+            }
+        }
+
+        .bioSection {
+            margin-top: 42px;
+            padding: 36px 32px 32px;
+
+            .bioHeader {
+                margin-bottom: 28px;
+                padding-left: 18px;
+
+                &__title {
+                    font-size: clamp(24px, 3vw, 34px);
+                }
+            }
+
+            .bioBody {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 18px;
+            }
+
+            .bioChapter {
+                padding: 24px;
+                gap: 16px;
+                border-radius: 24px;
+
+                &__content h4 {
+                    font-size: 20px;
+                }
+
+                &__content p {
+                    font-size: 15px;
+                    line-height: 1.9;
+                }
+            }
+
+            .bioHighlights {
+                margin-top: 18px;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 14px;
+            }
+
+            .bioHighlight {
+                padding: 20px 18px;
+
+                &__value {
+                    font-size: 16px;
+                }
+            }
+
+            .bioClosing {
+                margin-top: 22px;
+                padding-top: 20px;
+                font-size: 16px;
+            }
+        }
+
+        .stats {
+            margin-top: 24px;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 16px;
+
+            .statCard {
+                border-radius: 22px;
+                padding: 24px 20px;
+
+                &__value {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .sectionBlock {
+            margin-top: 44px;
+
+            .sectionHeading {
+                padding-left: 18px;
+
+                h3 {
+                    font-size: clamp(24px, 3vw, 36px);
+                    line-height: 1.24;
+                }
+            }
+
+            .skillGrid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 18px;
+
+                .skillCard {
+                    border-radius: 24px;
+                    padding: 26px;
+
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            &.quoteGrid {
+                grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+                gap: 18px;
+
+                .quoteCard,
+                .highlightCard {
+                    border-radius: 26px;
+                    padding: 28px;
+                }
+
+                .quoteCard h3 {
+                    font-size: clamp(22px, 2.8vw, 32px);
+                }
+            }
+        }
+
+        .quoteBlock {
+            margin-top: 44px;
+            border-radius: 34px;
+            padding: 34px 28px;
+
+            &__text {
+                font-size: clamp(20px, 2.6vw, 28px);
+            }
         }
     }
 }

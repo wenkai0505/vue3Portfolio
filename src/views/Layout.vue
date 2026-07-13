@@ -51,6 +51,10 @@ import Footer from "@/ccomponents/Footer.vue";
     @include mobile {
         height: 500px;
         .top {
+            .title {
+                font-size: clamp(28px, 8vw, 40px);
+                line-height: 1.25;
+            }
             .subTitle {
                 display: none;
             }
