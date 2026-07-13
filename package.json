@@ -4,9 +4,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev:vite": "vite",
-        "dev:server": "node server/index.js",
-        "dev": "run-p dev:vite dev:server",
+        "dev": "vite",
         "build": "npm run type-check && npm run build-only",
         "preview": "vite preview",
         "build-only": "vite build",
@@ -30,6 +28,7 @@
         "@vitejs/plugin-vue": "^6.0.6",
         "@vue/tsconfig": "^0.9.1",
         "chokidar-cli": "^3.0.0",
+        "msw": "^2.15.0",
         "npm-run-all2": "^8.0.4",
         "typescript": "~6.0.0",
         "unplugin-auto-import": "^21.0.0",
@@ -41,5 +40,10 @@
     },
     "engines": {
         "node": "^20.19.0 || >=22.12.0"
+    },
+    "msw": {
+        "workerDirectory": [
+            "public"
+        ]
     }
 }

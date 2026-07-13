@@ -35,6 +35,10 @@ const menuList = computed(() => {
                 title: "Home",
             },
             {
+                path: "/about",
+                title: "About",
+            },
+            {
                 path: "/create",
                 title: "Create",
             },
@@ -48,6 +52,10 @@ const menuList = computed(() => {
             {
                 path: "/",
                 title: "Home",
+            },
+            {
+                path: "/about",
+                title: "About",
             },
             {
                 path: "/login",
